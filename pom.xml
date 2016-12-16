@@ -5,9 +5,6 @@
         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <prerequisites>
-        <maven>3.0.0</maven>
-    </prerequisites>
 
     <groupId>xyz.stankovic</groupId>
     <artifactId>footmark</artifactId>
@@ -15,6 +12,30 @@
     <packaging>jar</packaging>
 
     <name>Footmark</name>
+    <description>The easy time tracking service written in Java.</description>
+    <url>https://github.com/nikolastankovic/footmark/</url>
+
+    <licenses>
+        <license>
+            <name>GNU GENERAL PUBLIC LICENSE, Version 3</name>
+            <url>https://www.gnu.org/licenses/gpl-3.0.en.html</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Nikola Stankovic</name>
+            <email>nikola@stankovic.xyz</email>
+            <organization>STANKOVIC Labs</organization>
+            <organizationUrl>http://www.stankovic.xyz</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git@github.com:nikolastankovic/footmark.git</connection>
+        <developerConnection>scm:git:git@github.com:nikolastankovic/footmark.git</developerConnection>
+        <url>git@github.com:nikolastankovic/footmark.git</url>
+    </scm>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -126,7 +147,6 @@
     <reporting>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-project-info-reports-plugin</artifactId>
                 <version>2.9</version>
                 <configuration>
